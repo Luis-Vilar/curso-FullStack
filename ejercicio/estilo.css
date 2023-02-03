@@ -1,6 +1,5 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
     box-sizing: border-box;
 }
 
@@ -31,4 +30,7 @@ border: 2px solid black;
 }
 #foto{
 text-align: center;
+}
+#ingredientes, #procedimentos{
+    font-size: 18px;
 }
