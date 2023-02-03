@@ -26,6 +26,7 @@ align-items: center;
 display: block;
 max-width: 800px;
 margin: 0px auto;
+border: 2px solid black;
 
 }
 #foto{
