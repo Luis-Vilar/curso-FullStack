@@ -1,0 +1,44 @@
+.containerHeader {
+  background-color: blue;
+  color: aliceblue;
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: space-between;
+}
+.containerHeader nav ul {
+  display: flex;
+}
+.containerHeader nav ul li {
+  padding: 10px;
+  list-style: none;
+}
+.containerMain {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-end;
+}
+.containerMain article {
+  width: 250px;
+  height: 70%;
+}
+
+.footer {
+  display: flex;
+  background-color: blue;
+  color: aliceblue;
+}
+
+.artt1 {
+  background-color: darkcyan;
+}
+.artt2 {
+  background-color: darkcyan;
+}
+.artt3 {
+  background-color: darkcyan;
+}
+.artt4 {
+  background-color: darkcyan;
+}
