@@ -1,0 +1,37 @@
+#h1TituloIndex {
+  font-family: "Verdana";
+  font-size: 20px;
+  color: brown;
+  text-align: center;
+  background-image: url('img/fondoH1.jpeg');
+}
+
+body {
+  background-color: yellow;
+}
+p {
+  font-size: 14px;
+}
+
+#btnAvancar {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+}
+#imgAvancar {
+  max-width: 15px;
+}
+
+/* Ex 5 - Imagem de fundo
+Etiquetas:
+Módulo 1
+Baixa Prioridade
+Fácil
+
+Descrição:
+No index.html, adicione uma imagem de fundo no seu h1 que cubra todo o espaço do elemento, sem repetições.
+
+Dica:
+CSS background-image property
+ */
