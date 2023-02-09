@@ -83,3 +83,9 @@ p {
 #videoYouTube {
   width: 500px;
 }
+
+footer{
+  color: white;
+  background-color: cornflowerblue;
+text-align: center
+;}
