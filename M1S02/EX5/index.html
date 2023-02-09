@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Landing Page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+    </header>
+    <main class="container containerMain">
+
+        <div class="container container-titulo">
+            <h1>Volkswagen</h1>
+            <h2> Kombi</h2>
+        </div>
+
+        <div class="container container-produto">
+
+
+            <div class="container-texto">
+                <p class="texto-parrafo">
+                    O Volkswagen Kombi foi um veículo comercial ligeiro produzido pela empresa
+                    automotiva alemã Volkswagen, entre 1950 e 2013. Por força de um decreto, os carros a partir de 2014,
+                    deveriam ser
+                    dotados de freio tipo ABS e possuir Airbag frontal duplo (para o condutor e passageiro do banco
+                    dianteiro). O antigo projeto mostrou-se incompatível com as novas exigências da legislação. No
+                    Brasil, foi fabricada ininterruptamente entre 2 de setembro de 1957 e 18 de dezembro de 2013, sendo
+                    praticamente o automóvel mais antigo no mercado do país. É considerada a precursora das vans de
+                    passageiros e carga.
+
+                    Sua construção robusta monobloco (chassi e carroceria trabalhando integralmente), suspensão
+                    independente com barras de torção, além da excêntrica posição do motorista no automóvel (sentado
+                    sobre o eixo dianteiro e com a coluna de direção praticamente vertical), o tornam um veículo simples
+                    e robusto, de baixo custo de manutenção. Sua motorização é um caso a parte: embora os modelos
+                    recentes possuam motores mais modernos, durante 50 anos o motor que equipou o veículo no Brasil foi
+                    o tradicional "boxer" com refrigeração a ar, simples e muito resistente. Tal durabilidade geralmente
+                    superava em muito a do resto do carro, sendo comum nas ruas brasileiras ver carros totalmente
+                    destroçados, porém com o motor rodando perfeitamente. A despeito disso, a Kombi é um carro que, se
+                    usado dentro das especificações padrão, pode durar um longo período. </p>
+            </div>
+            <div class="container-img">
+                <img src="img/kombi.jpeg" alt="imagem do produto">
+            </div>
+
+        </div>
+
+
+        <div class="container container-formulario">
+            <form id="form-cliente">
+                <h2>Formulario cliente :</h2>
+                <div class="form-group">
+                    <label class="form-label" for="nome">Nome Completo:</label>
+                    <input type="texto" name="nome_usuario" class="form-control" id="formGroupExampleInput"
+                        placeholder="Nome e Sobrenome">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="dataNacimento">Data Nascimento:</label>
+                    <input type="date" value="1983-04-24" class="form-control" id="formGroupExampleInput"
+                        name="dataNacimento_usuario">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="cep">CEP :</label>
+                    <input type="texto" class="form-control" id="formGroupExampleInput" name="cep_usuario"
+                        placeholder="99999-999">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">E-mail:</label>
+                    <input type="email" class="form-control" id="formGroupExampleInput" name="email_usuario"
+                        placeholder="email@server.com">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="phone">Telefone:</label>
+                    <input type="text" id="phone" class="form-control" data-mdb-input-mask="99-99999-9999"
+                        name="tel_usuario" placeholder="99-99999-9999" />
+                </div>
+
+                <input class="btn btn-primary" type="submit" value="Enviar" onclick="seijaAmigavel()">
+            </form>
+
+
+        </div>
+
+
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+        <!-- script personalizado -->
+        <script src="script.js"></script>
+</body>
+
+</html>
