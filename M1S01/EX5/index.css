@@ -1,0 +1,29 @@
+body{
+    background-color: yellow;
+}
+
+p{
+    font-size: 14px;
+}
+
+
+#btnAvancar{
+border-radius: 5px;
+padding: 10px;
+border: solid 2px black;
+margin-top: 20px;
+}
+#imgAvancar{
+width: 30px;
+height: 30px;
+}
+
+#h1TituloIndex {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: brown;
+    text-align: center;
+    background-image: url("img/fondoH1.jpeg");
+  }
+
+  

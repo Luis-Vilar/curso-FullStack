@@ -1,0 +1,60 @@
+body {
+  background-color: yellow;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+main {
+  margin-top: 56px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: end;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+}
+
+#logo {
+  margin: 5px;
+  width: 50px;
+  border-radius: 50%;
+}
+nav ul {
+  display: flex;
+  margin: 5px;
+  list-style: none;
+}
+nav ul li {
+  margin: 5px;
+}
+
+p {
+  font-size: 14px;
+}
+
+#btnAvancar {
+  border-radius: 5px;
+  padding: 10px;
+  border: solid 2px black;
+  margin-top: 20px;
+}
+#imgAvancar {
+  width: 30px;
+  height: 30px;
+}
+
+#h1TituloIndex {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color: brown;
+  text-align: center;
+  background-image: url("img/fondoH1.jpeg");
+}
