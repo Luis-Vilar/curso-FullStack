@@ -5,7 +5,7 @@ export class ListaNegociacoes {
     this.#listaNegociacoes.push(negociação);
   }
 
-  filtrarNegociacoes = () => {
+  vendasMaiorQue5000 ()  {
     var tempList = [].concat(this.#listaNegociacoes);
     let listaRetorna = [];
 
@@ -17,4 +17,6 @@ export class ListaNegociacoes {
 
     return listaRetorna;
   };
+
+  filtrarNegociacoes = () => this.vendasMaiorQue5000();
 }
