@@ -5,19 +5,20 @@ export class ListaNegociacoes {
     this.#listaNegociacoes.push(negociação);
   }
 
-  filtrarNegociacoes(){
-    let tempList = [].concat(this.#listaNegociacoes);
+  filtrarNegociacoes() {
+    var tempList = [].concat(this.#listaNegociacoes);
+    let listaRetorna = [];
 
-
-   for (let index = 0; index < tempList.length; index++) {
-   if (tempList[index].valor <= 5000) {
-      tempList.splice(index, 1);
-   }
+    for (let index = 0; index < tempList.length; index++) {
+      if (tempList[index].valor > 5000 ) {
+        listaRetorna.push(tempList[index])
+        
+      }
     
-   }
-   return tempList;
+    }
+
+    return listaRetorna;
   }
-  
+ 
+
 }
-
-
