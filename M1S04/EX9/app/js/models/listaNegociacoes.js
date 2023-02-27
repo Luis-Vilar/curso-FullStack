@@ -5,12 +5,12 @@ export class ListaNegociacoes {
     this.#listaNegociacoes.push(negociação);
   }
 
-  vendasMaiorQue5000 ()  {
+  vendasMaiorQue (valor)  {
     var tempList = [].concat(this.#listaNegociacoes);
     let listaRetorna = [];
 
     for (let index = 0; index < tempList.length; index++) {
-      if (tempList[index].valor > 5000) {
+      if (tempList[index].valor > valor) {
         listaRetorna.push(tempList[index]);
       }
     }
@@ -18,5 +18,5 @@ export class ListaNegociacoes {
     return listaRetorna;
   };
 
-  filtrarNegociacoes = () => this.vendasMaiorQue5000();
+  filtrarNegociacoes = () => this.vendasMaiorQue(5000);
 }
