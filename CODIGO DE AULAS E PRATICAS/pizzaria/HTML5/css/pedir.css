@@ -1,0 +1,134 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  /* Inicio */
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  /* body */
+  .fondo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+  
+    /* Grey shade / Grey 1100 */
+    background: #1f2933;
+  }
+  
+  /* header */
+  .header {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 66.87%;
+  
+    background: #215191;
+    border-radius: 0px 0px 25px 25px;
+    text-align: center;
+    display: block;
+    
+    
+  
+  }
+  
+  .logo {
+    align-self: center;
+    margin: 0px auto;
+    position: relative;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+  }
+  
+  .logo img {
+    width: inherit;
+    height: inherit;
+  }
+  .textoHeader {
+    margin-top: 10px;
+    color: #ffffff;
+  
+  }
+  .textoHeader h1{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .textoHeader h3{
+    font-size: 18px;
+    color: #cbd2d9;
+    font-weight: lighter;
+  }
+  
+  /* btn */
+  .btn {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    position: absolute;
+  
+    align-self: center;
+    width: 281px;
+    height: 64px;
+    background: #323f4b;
+    border-radius: 16px;
+  }
+  .btn h3 {
+    margin-right: 15px;
+    margin-left: auto;
+    color: #ffffff;
+  }
+  
+  /* btnFazerPedido */
+  .btnMassas {
+    top: 40%;
+    bottom: 10%;
+  }
+  .btnMassas img {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .btnMassas h3 {
+    text-align: end;
+  }
+  /* btnControlPedidos */
+  
+  .btnBordas {
+    top: 55%;
+    bottom: 10%;
+  }
+  .btnBordas img {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .btnBordas h3 {
+    text-align: end;
+  }
+  
+  .btnSabor {
+    top: 70%;
+    bottom: 10%;
+  }
+  .btnSabor img {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .btnSabor h3 {
+    text-align: end;
+  }
+
+.btnPedir{
+    top: 85%;
+    bottom: 10%;
+    left: 57%;
+    width: 100px;
+    height: 64px;
+}
