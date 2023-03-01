@@ -1,17 +1,18 @@
-function piscar() {
-  // alert('boton funcionando');
-  let contador = 0;
-  let intervalo = 0;
+let variavel;
 
-  while (contador < 10) {
+function minhaFuncao() {
+  variavel = setInterval(consoleLog, 2000);
 
-    intervalo = intervalo + 300;
-    setTimeout("document.getElementById('lampada').src='on.jpg' ;" , intervalo);
-
-    intervalo = intervalo + 300;
-    setTimeout("document.getElementById('lampada').src='off.jpg';" , intervalo);
-    
-
-    contador++;
-  }
 }
+function consoleLog(){
+console.log('Ola, turma Itaguaçu');
+
+}
+
+function pararFuncao(){
+
+    clearInterval(variavel);
+}
+
+document.getElementById('btnOn').onclick = minhaFuncao ;
+document.getElementById('btnOff').onclick = pararFuncao ;
