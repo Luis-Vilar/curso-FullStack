@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <header>
+        <h2>
+            Pizzaria do Joãozinho
+        </h2>
+    </header>
+    <main>
+        <section>
+            <fieldset>
+                <legend>Monte sua pizza como desejar :</legend>
+                <label>Selecione a Massa</label>
+                <select id="massas" onchange='inserirAdiccionais()'/>
+                <option value=""></option>
+                <option> integral</option>
+                <option> tradicional</option>
+                <option> sem glúten</option>
+                <option> temperada</option>
+                <option>fermentação natural</option>
+                </select> <br>
+                <label>Selecione a Borda</label>
+                <select id="bordas" onchange='inserirAdiccionais()'/>
+                <option value=""></option>
+                <option> sem borda</option>
+                <option> Catupiry</option>
+                <option> cheddar</option>
+                <option> chocolate</option>
+                <option> nutella</option>
+
+                </select>
+                <br><br>
+                <label>Digite os sabores(Maximo 3):</label><br>
+                <input id="campo" type="text" placeholder="Digite 3 sabores">
+                <button id="botao" onclick="inserirAdiccionais()">Incluir</button>
+
+                <ul id="lista"></ul>
+                <label>--Nosso Cardápio--</label>
+                <ul>
+                    <li>Margarita</li>
+                    <li>Peperoni</li>
+                    <li>Calabresa</li>
+                    <li>Quatro Queijos</li>
+                    <li>Lombinho</li>
+                    <li>Frango Catupiry</li>
+                    <li>Milho com Catupiry</li>
+                    <li>Bacon</li>
+                    <li>Mussarela</li>
+                    <li>Prestigio</li>
+                    <li>Mussarela</li>
+                    <li>Alho e Oleo</li>
+                    <li>Banana com doce de leite</li>
+                    <li>Chimia</li>
+                    <li>Paulista</li>
+                    <li>Strogonoff de carne</li>
+                    <li>Portuguesa</li>
+                </ul><br><br>
+                <button type="button" name="enviar" value="Enviar Pedido"></button>
+            </fieldset>
+        </section>
+    </main>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
