@@ -17,15 +17,27 @@
                                                             javascript      javascriptreact
                                                             HTML            vue-html
     ***************creadores de proyectos react mas utilizados***********************************
-    *CRA create-react-app
-    *Vite ==> posibilidad de crear otros tipos de app, mejor perfomance.
+    *CRA : create-react-app
+    *Vite: npm create vite@latest    ==> posibilidad de crear otros tipos de app, mejor perfomance. 
 
     #-------------------------------------------------------------------------------------------------------------#
 
 
-    #-------------------------------------------comenzando--------------------------------------------------------#
+    #-------------------------------------------comenzando con vite-----------------------------------------------#
       npm create vite@latest
       cd vite-project
       npm install
       npm run dev
 
+function Componente(){
+    return(
+    <div>
+
+        <h1></h1>
+
+    </div>
+
+)
+
+}
+export default Componente;
