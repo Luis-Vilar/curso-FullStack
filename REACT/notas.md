@@ -7,9 +7,6 @@
     #-  es decir, si se desea modificar un elemento en el DOM, se debe copiar el
     contenido del DOM en el virtual dom y luego modificarlo.
     #-------------------------------------------------------------------------------------------------------------#
-
-
-
     #------------------------------------REACT pluguins, ETC------------------------------------------------------#
 
     * Simple React Snippets
@@ -21,16 +18,18 @@
     *Vite: npm create vite@latest    ==> posibilidad de crear otros tipos de app, mejor perfomance.
 
     #-------------------------------------------------------------------------------------------------------------#
-
-
     #-------------------------------------------comenzando con vite-----------------------------------------------#
       npm create vite@latest
       cd vite-project
       npm install
       npm run dev
+    #-------------------------------------------------------------------------------------------------------------#
+
+    #-----------------------------------------Ejemplo de compónente react-----------------------------------------#
 
 function Componente(){
 return(
+
 <div>
 
         <h1></h1>
