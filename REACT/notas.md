@@ -1,10 +1,10 @@
     #-------------------------------------------------------NOTAS------------------------------------------------#
-    #-react consigue alterar solo un elemento en el virtual dom ganando performance 
+    #-react consigue alterar solo un elemento en el virtual dom ganando performance
     en comparacion a html5 que necesariamente debe renderizar toda la pagina.
-    #- no react solo sera recargada la pagina total cuando explicitamente lo deseemos, 
+    #- no react solo sera recargada la pagina total cuando explicitamente lo deseemos,
     ( evitando el prevent-default)
     #-  react travaja con virtual dom que es una copia del DOM.
-    #-  es decir, si se desea modificar un elemento en el DOM, se debe copiar el 
+    #-  es decir, si se desea modificar un elemento en el DOM, se debe copiar el
     contenido del DOM en el virtual dom y luego modificarlo.
     #-------------------------------------------------------------------------------------------------------------#
 
@@ -18,7 +18,7 @@
                                                             HTML            vue-html
     ***************creadores de proyectos react mas utilizados***********************************
     *CRA : create-react-app
-    *Vite: npm create vite@latest    ==> posibilidad de crear otros tipos de app, mejor perfomance. 
+    *Vite: npm create vite@latest    ==> posibilidad de crear otros tipos de app, mejor perfomance.
 
     #-------------------------------------------------------------------------------------------------------------#
 
@@ -30,8 +30,8 @@
       npm run dev
 
 function Componente(){
-    return(
-    <div>
+return(
+<div>
 
         <h1></h1>
 
