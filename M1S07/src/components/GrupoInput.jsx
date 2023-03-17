@@ -27,7 +27,6 @@ GrupoInput.propTypes = {
   tipo: PropTypes.string.isRequired,
   min: PropTypes.number,
   step: PropTypes.number,
-  valor: PropTypes.number.isRequired,
   aoDigitar: PropTypes.func.isRequired,
 };
 export default GrupoInput;
