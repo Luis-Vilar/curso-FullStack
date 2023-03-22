@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       {/* componentes externos*/}
-      <CardAdicionar />
+      <CardAdicionar adicionarTarefa={()=> console.log('recevefuncao')} />
     </div>
   )
 }

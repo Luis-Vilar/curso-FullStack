@@ -10,7 +10,7 @@ function CardAdicionar(props) {
         value={textoTarefa}
         onChange={(e) => setTextoTarefa(e.target.value)}
       />
-      <button onClick={props.adicionarTarefa()}></button>
+      <button onClick={props.adicionarTarefa()}>Adicionar</button>
     </>
   );
 }
