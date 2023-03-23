@@ -8,6 +8,7 @@ function ListItem(props) {
         <div key= {props.tarefa.id}>
             <p>{props.tarefa.texto}</p>
             <button onClick={()=> finalizarTarefa}>Finalizar Tarefa</button>
+            <button onClick={()=> props.removeTarefa(props.tarefa.id)}>Remover Tarefa</button>
         </div>
      );
 }

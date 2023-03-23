@@ -20,16 +20,20 @@ function criarNovaTarefa(textoTarefa) {
   console.log(listaTarefs)
 
 }
-
+function removerTarefa(id) {
+  const novaListaTarefas = listaTarefs.filter((tarefa) => tarefa.id !== id)
+  setListaTarefas(novaListaTarefas)
+}
+  //render
   return (
     <div className="App">
       {/* componentes externos*/}
       <CardAdicionar criarNovaTarefa={criarNovaTarefa} />
       <ul>
         {listaTarefs.map((tarefa) => (
-          <ListItem tarefa={tarefa} />
+          <ListItem tarefa={tarefa} removeTarefa={removerTarefa}/>
         ))}
-        
+
       </ul>
     </div>
   )
