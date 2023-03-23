@@ -1,42 +1,40 @@
 // imports
-import './App.css'
-import React from 'react'
-import CardAdicionar from './components/CardAdicionar'
-import { useState } from 'react'
-import ListItem from './components/ListItem'
+// import './App.css'
+import React from "react";
+import CardAdicionar from "./components/CardAdicionar";
+import { useState } from "react";
+import ListItem from "./components/ListItem";
 // inicio Componente
 function App() {
   //variaveis
-  const [listaTarefs, setListaTarefas] = useState([])
-//funcoes
-function criarNovaTarefa(textoTarefa) {
-  const novaTarefa = {
-    id: Date.now(),
-    texto: textoTarefa,
-    finalizado: false,
+  const [listaTarefs, setListaTarefas] = useState([]);
+  //funcoes
+  function criarNovaTarefa(textoTarefa) {
+    const novaTarefa = {
+      id: Date.now(),
+      texto: textoTarefa,
+      finalizado: false,
+    };
+    const novaListaTarefas = [...listaTarefs, novaTarefa];
+    setListaTarefas(novaListaTarefas);
+    console.log(listaTarefs);
   }
-  const novaListaTarefas = [...listaTarefs, novaTarefa]
-  setListaTarefas(novaListaTarefas)
-  console.log(listaTarefs)
-
-}
-function removerTarefa(id) {
-  const novaListaTarefas = listaTarefs.filter((tarefa) => tarefa.id !== id)
-  setListaTarefas(novaListaTarefas)
-}
+  function removerTarefa(id) {
+    const novaListaTarefas = listaTarefs.filter((tarefa) => tarefa.id !== id);
+    setListaTarefas(novaListaTarefas);
+  }
   //render
   return (
-    <div className="App">
+    <div className="container-sm pt-3">
       {/* componentes externos*/}
       <CardAdicionar criarNovaTarefa={criarNovaTarefa} />
-      <ul>
+      <div className="d-flex flex-wrap">
         {listaTarefs.map((tarefa) => (
-          <ListItem tarefa={tarefa} removeTarefa={removerTarefa}/>
+          <ListItem tarefa={tarefa} removeTarefa={removerTarefa} />
         ))}
-
-      </ul>
+      </div>
     </div>
-  )
+  );
 }
 //export
-export default App
+export default App;
