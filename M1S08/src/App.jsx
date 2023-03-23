@@ -8,7 +8,7 @@ function App() {
   //variaveis
   const [listaTarefs, setListaTarefas] = useState([])
 //funcoes
-function criarNovaTarefa() {
+function criarNovaTarefa(textoTarefa) {
   const novaTarefa = {
     id: Date.now(),
     texto: textoTarefa,
@@ -16,13 +16,14 @@ function criarNovaTarefa() {
   }
   const novaListaTarefas = [...listaTarefs, novaTarefa]
   setListaTarefas(novaListaTarefas)
-  setTextoTarefa('')
+  console.log(listaTarefs)
+
 }
 
   return (
     <div className="App">
       {/* componentes externos*/}
-      <CardAdicionar criarNovaTarefa={criarNovaTarefa()} />
+      <CardAdicionar criarNovaTarefa={criarNovaTarefa} />
     </div>
   )
 }
