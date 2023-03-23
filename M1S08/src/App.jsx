@@ -3,6 +3,7 @@ import './App.css'
 import React from 'react'
 import CardAdicionar from './components/CardAdicionar'
 import { useState } from 'react'
+import ListItem from './components/ListItem'
 // inicio Componente
 function App() {
   //variaveis
@@ -24,6 +25,12 @@ function criarNovaTarefa(textoTarefa) {
     <div className="App">
       {/* componentes externos*/}
       <CardAdicionar criarNovaTarefa={criarNovaTarefa} />
+      <ul>
+        {listaTarefs.map((tarefa) => (
+          <ListItem tarefa={tarefa} />
+        ))}
+        
+      </ul>
     </div>
   )
 }
