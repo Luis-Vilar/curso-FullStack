@@ -7,11 +7,22 @@ import { useState } from 'react'
 function App() {
   //variaveis
   const [listaTarefs, setListaTarefas] = useState([])
+//funcoes
+function criarNovaTarefa() {
+  const novaTarefa = {
+    id: Date.now(),
+    texto: textoTarefa,
+    finalizado: false,
+  }
+  const novaListaTarefas = [...listaTarefs, novaTarefa]
+  setListaTarefas(novaListaTarefas)
+  setTextoTarefa('')
+}
 
   return (
     <div className="App">
       {/* componentes externos*/}
-      <CardAdicionar adicionarTarefa={()=> console.log('recevefuncao')} />
+      <CardAdicionar criarNovaTarefa={criarNovaTarefa()} />
     </div>
   )
 }
