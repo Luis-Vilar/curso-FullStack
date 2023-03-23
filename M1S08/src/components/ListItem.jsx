@@ -2,12 +2,13 @@ import { useState } from "react";
 function ListItem(props) {
     const [estadoTarefa, setEstadoTarefa] = useState(false)
     function finalizarTarefa(){
-        setEstadoTarefa(true);
+        setEstadoTarefa(!estadoTarefa);
     }
     return ( 
         <div key= {props.tarefa.id}>
             <p>{props.tarefa.texto}</p>
-            <button onClick={()=> finalizarTarefa}>Finalizar Tarefa</button>
+            <p>{estadoTarefa ? 'Tarefa Finalizada':'Tarefa Pendente'}</p>
+            <button onClick={finalizarTarefa}>{estadoTarefa ? 'ACTIVAR':'FINALIZAR'}</button>
             <button onClick={()=> props.removeTarefa(props.tarefa.id)}>Remover Tarefa</button>
         </div>
      );
