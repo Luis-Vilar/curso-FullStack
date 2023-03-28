@@ -1,15 +1,9 @@
-export class Avatar extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+import React from "react";
 
-  render() {
-    return (
-      <img
-        src={this.props.src}
-        className="img-thumbnail"
-        alt={this.props.alt}
-      />
-    );
-  }
-}
+function Avatar (props) {
+  return (
+    <img src={props.src} className="img-thumbnail" alt={props.alt} />
+  );
+};
+
+export default Avatar;

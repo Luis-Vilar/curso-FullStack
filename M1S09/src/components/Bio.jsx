@@ -1,14 +1,11 @@
-export class Bio extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <div>
+import React from 'react';
+function Bio(props) {
+  return ( 
+<div>
         <h3>Bio</h3>
-        {this.props.children}
+        {props.children}
       </div>
-    );
-  }
+   );
 }
+
+export default Bio;
