@@ -1,0 +1,168 @@
+.header__container {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  background-color: indianred;
+  color: #fff;
+}
+
+.header__logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.header__navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header__navlinks {
+  display: flex;
+  list-style: none;
+  margin-left: 24px;
+}
+
+.header__navlinks > li > a {
+  padding: 12px 24px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 100ms ease-in-out;
+}
+
+.header__navlinks > li > a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.home__container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  background-color: indianred;
+}
+
+.home__title {
+  margin-top: 10%;
+  margin-bottom: 1rem;
+  max-width: 650px;
+  text-align: center;
+  font-size: 6rem;
+}
+
+.home__description {
+  font-size: 1.25rem;
+}
+
+.products__container {
+  width: 100%;
+  padding: 24px 48px;
+}
+
+.product_grid__container {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 36px;
+}
+
+.product_grid__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.product_card__container {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.product_card__content {
+  padding: 24px;
+}
+
+.product_card__image {
+  max-width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+.product_card__image > img {
+  width: 100%;
+  display: block;
+}
+
+.product_card__title {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.product_card__price {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 24px 0;
+}
+
+.product_card__action > button {
+  background: indianred;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 100ms ease-in-out;
+}
+
+.product_card__action > button:hover {
+  background: #fff;
+  color: indianred;
+  border: 1px solid indianred;
+}
+
+.profile__container {
+  width: 100%;
+  padding: 48px 48px;
+}
+
+.profile__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.profile__user-data {
+  flex-grow: 1;
+  margin-left: 24px;
+}
+
+.profile__name {
+  font-size: 4.5rem;
+  font-weight: 100;
+}
+
+.profile__image-container {
+  width: 100%;
+  max-width: 100px;
+  overflow: hidden;
+  padding: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.profile__image-container > img {
+  width: 100%;
+  display: block;
+}
+
+.profile__body {
+  display: flex;
+  flex-direction: column;
+}
