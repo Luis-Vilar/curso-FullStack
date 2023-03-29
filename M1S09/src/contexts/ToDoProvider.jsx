@@ -1,8 +1,7 @@
 import React, { createContext } from "react";
 import { useState } from "react";
 
-
-export const todoContext = createContext();
+export const todosContext = createContext();
 
 function ToDoProvider({ children }) {
   const [toDos, setToDos] = useState([
@@ -32,13 +31,9 @@ function ToDoProvider({ children }) {
 
   const completedToDos = toDos.filter((todo) => todo.done);
   const pendingToDos = toDos.filter((todo) => !todo.done);
-
+  const value = { addToDo, markTodo, completedToDos, pendingToDos };
   return (
-    <todosContext.Provider
-      value={{ addToDo, markTodo, completedToDos, pendingToDos }}
-    >
-      {children}
-    </todosContext.Provider>
+    <todosContext.Provider value={value}>{children}</todosContext.Provider>
   );
 }
 

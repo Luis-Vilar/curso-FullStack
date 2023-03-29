@@ -1,16 +1,13 @@
 import { useRef } from "react";
 import { useToDos } from "../contexts/useToDos";
 
-const todoContext = useToDos();
-const {addToDo} = todoContext;
-
-
-export const Formulario = () => {
+export const Formulario = ({ onSubmit }) => {
   const textElementRef = useRef();
+  const todosContext = useToDos();
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    onSubmit(addToDo(textElementRef.current.value));
+    onSubmit(todosContext.addToDo(textElementRef.current.value));
     textElementRef.current.value = "";
   };
 
@@ -18,7 +15,7 @@ export const Formulario = () => {
     <div className="mb-5 p-4 bg-secondary-subtle bg-gradient rounded">
       <h5>Adicionar tarefa</h5>
       <form className="input-group mb-3" onSubmit={handleSubmit}>
-        <span class="input-group-text" id="campo-adicionar-tarefa">
+        <span className="input-group-text" id="campo-adicionar-tarefa">
           Texto da tarefa:
         </span>
         <input
