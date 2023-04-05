@@ -1,36 +1,20 @@
-import React from "react";
-
-function DadosPessoais(props) {
-  return (
-    <>
-      <div className="form-group">
-        <span>Dados Pessoais</span> <span>Endereço</span>{" "}
-        <span>Agradecimiento</span>
-      </div>
-      <div>
-        <label htmlFor="nome">Nome :</label>
-        <input
-          id="nome"
-          type="text"
-          className="form-control"
-          placeholder="Digite o seu nome "
-          aria-label="nome"
-        />
-      </div>
-
-      <div className="form-group">
-        <label htmlFor="email">E-mail :</label>
-        <input
-          id="email"
-          type="email"
-          className="form-control"
-          placeholder="Digite o seu e-mail "
-          aria-label="e-mail"
-        />
-      </div>
-      
-    </>
-  );
+function DadosPessoais() {
+    return (
+        <div>
+            <div className="col-12">
+                <label className="form-label" htmlFor="name">Nome:</label>
+                <div className="input-group mb-3 col-12">
+                    <input type="text" className="form-control" name="name" id="name" placeholder="Digite o seu nome" required />
+                </div>
+            </div>
+            <div className="col-12">
+                <label className="form-label" htmlFor="name">Email:</label>
+                <div className="input-group">
+                    <input type="text" className="form-control" name="email" id="email" placeholder="Digite o seu email" required />
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default DadosPessoais;

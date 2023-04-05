@@ -1,21 +1,21 @@
-import React from "react";
+function Agradecimento() {
+    return (
+        <div>
+            <h3>Obrigado pelo seu cadastro!</h3>
 
-function Agradecimento (props) {
-  return (
-    <>
-      <h1>Obrigado pelo seu cadastro!</h1>
-      <h3>Conte-nos : onde nos conheceu?</h3>
-      <div className="form-group">
-        <select name="selecioneContato" id="selecioneContato">
-          <option value="">Seleccione</option>
-          <option value="dog"> Pelo site</option>
-          <option value="cat">Pelo LinkedIn</option>
-          <option value="hamster">Pelo Instagram</option>
-        </select>
-      </div>
-  
-    </>
-  );
-};
+            <div className="row">
+                <h4>Conte-nos: onde nos conheceu?</h4>
+                <div className="col-12">
+                    <select className="form-select" aria-label="Default select example" required>
+                        <option defaultValue>Selecione</option>
+                        <option value="site">Pelo site</option>
+                        <option value="linkedind">Pelo LinkedIn</option>
+                        <option value="instagram">Pelo Instagram</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    );
+}
 
 export default Agradecimento;
