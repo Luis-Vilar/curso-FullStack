@@ -1,11 +1,9 @@
 /* reset do CSS */
-
 * {
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
-
 body {
-    background-color: #f9fafc;
+  background-color: #f9fafc;
 }
