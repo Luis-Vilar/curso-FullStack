@@ -1,20 +1,36 @@
+import { Row, Col, Form, FormLabel } from "react-bootstrap";
 function DadosPessoais() {
-    return (
-        <div>
-            <div className="col-12">
-                <label className="form-label" htmlFor="name">Nome:</label>
-                <div className="input-group mb-3 col-12">
-                    <input type="text" className="form-control" name="name" id="name" placeholder="Digite o seu nome" required />
-                </div>
-            </div>
-            <div className="col-12">
-                <label className="form-label" htmlFor="name">Email:</label>
-                <div className="input-group">
-                    <input type="text" className="form-control" name="email" id="email" placeholder="Digite o seu email" required />
-                </div>
-            </div>
-        </div>
-    );
+  return (
+    <Form>
+      <Row>
+        <Col>
+          <Form.Group className="mb-3" controlId="formBasicName">
+            <Form.Label>Nome :</Form.Label>
+            <Form.Control
+              id="name"
+              type="text"
+              placeholder="Digite seu nome"
+              required
+            />
+          </Form.Group>
+        </Col>
+        <Col>
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Label>E-mail :</Form.Label>
+            <Form.Control
+              id="email"
+              type="email"
+              placeholder="Digite seu E-mail"
+              required
+            />
+            <Form.Text className="text-muted">
+              Nunca vamos compartilhar seu E-Mail com ninguem...
+            </Form.Text>
+          </Form.Group>
+        </Col>
+      </Row>
+    </Form>
+  );
 }
 
 export default DadosPessoais;
