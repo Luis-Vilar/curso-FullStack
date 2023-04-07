@@ -2,7 +2,7 @@ import { Row, Col, Form } from "react-bootstrap";
 
 function Agradecimento() {
   return (
-    <Form>
+    <>
       <h3>Obrigado pelo seu cadastro!</h3>
 
       <Row>
@@ -20,7 +20,7 @@ function Agradecimento() {
           </select>
         </Col>
       </Row>
-    </Form>
+      </>
   );
 }
 

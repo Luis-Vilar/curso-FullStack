@@ -31,12 +31,12 @@ function App() {
         <h2>Cadastre-se gratuitamente!</h2>
         <p>
           Faça o seu cadastro para ter acesso a todos os recursos da nossa
-          plataforma
+          plataforma {` paso atual :${passoAtual}`}
         </p>
       </SCHeader>
       {/* //renderizando formulario */}
       <SCContainerFormulario>
-        <form onSubmit={(e) => mudarPasso(passoAtual + 1, e)}>
+        <form >
           {/* //renderizando passos */}
           <Passos passoAtual={passoAtual} />
           {/* //renderizando componentes */}
@@ -61,7 +61,7 @@ function App() {
                 <FiSend />
               </SCBtn>
             ) : (
-              <SCBtn type="submit">
+              <SCBtn type="submit"  onClick={(e) => mudarPasso(passoAtual +1, e)}>
                 <span>Avançar</span>
                 <GrFormNextLink />
               </SCBtn>

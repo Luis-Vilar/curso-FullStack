@@ -1,35 +1,30 @@
 import { Row, Col, Form, FormLabel } from "react-bootstrap";
 function DadosPessoais() {
   return (
-    <Form>
+    <>
       <Row>
         <Col>
-          <Form.Group className="mb-3" controlId="formBasicName">
-            <Form.Label>Nome :</Form.Label>
-            <Form.Control
-              id="name"
-              type="text"
-              placeholder="Digite seu nome"
-              required
-            />
-          </Form.Group>
+        <Form.Group className="mb-3" controlId="nome">
+          <Form.Label>Nome :</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="Nome"
+            required
+          />
+        </Form.Group>
         </Col>
         <Col>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Group className="mb-3" controlId="mail">
             <Form.Label>E-mail :</Form.Label>
             <Form.Control
-              id="email"
               type="email"
               placeholder="Digite seu E-mail"
               required
             />
-            <Form.Text className="text-muted">
-              Nunca vamos compartilhar seu E-Mail com ninguem...
-            </Form.Text>
           </Form.Group>
         </Col>
       </Row>
-    </Form>
+      </>
   );
 }
 
