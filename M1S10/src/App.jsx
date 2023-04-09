@@ -1,4 +1,4 @@
-// importando icones 
+// importando icones
 import { GrFormNextLink, GrFormPrevious } from "react-icons/gr";
 import { FiSend } from "react-icons/fi";
 //importando estilos styled-components
@@ -10,6 +10,8 @@ import DadosPessoais from "./components/DadosPessoais";
 import Passos from "./components/Passos";
 //importando custom hook useForm
 import { useForm } from "./hooks/useForm";
+//importando componentes do bootstrap
+import { Form } from "react-bootstrap";
 
 function App() {
   //array de componentes que serão renderizados
@@ -36,7 +38,7 @@ function App() {
       </SCHeader>
       {/* //renderizando formulario */}
       <SCContainerFormulario>
-        <form >
+        <Form>
           {/* //renderizando passos */}
           <Passos passoAtual={passoAtual} />
           {/* //renderizando componentes */}
@@ -55,19 +57,23 @@ function App() {
             {ehUltimoPasso ? (
               <SCBtn
                 type="submit"
+                // voltar para o passo 0
                 onClick={(e) => mudarPasso(passoAtual - 2, e)}
               >
                 <span>Enviar</span>
                 <FiSend />
               </SCBtn>
             ) : (
-              <SCBtn type="submit"  onClick={(e) => mudarPasso(passoAtual +1, e)}>
+              <SCBtn
+                type="submit"
+                onClick={(e) => mudarPasso(passoAtual + 1, e)}
+              >
                 <span>Avançar</span>
                 <GrFormNextLink />
               </SCBtn>
             )}
           </div>
-        </form>
+        </Form>
       </SCContainerFormulario>
     </div>
   );
