@@ -1,0 +1,9 @@
+{
+  "name": "M2S02Ex5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.4.0"
+  }
+}
